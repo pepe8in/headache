@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main () {
+	long a = 0;
+
+	printf("Entez un entier : ");
+	scanf("%ld", &a);
+	printf("%ld : %016lx\n", a, a);
+
+	return 0; 
+}
