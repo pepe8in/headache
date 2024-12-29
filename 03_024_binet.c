@@ -6,9 +6,10 @@ int main () {
 
 	printf("Entrez une valeur : ");
 	scanf("%d", &a);
+	long double i = sqrtl(5.);
 
-	unsigned long fibo = (1 / sqrt(5)) * (pow(((1 + sqrt(5)) / 2), a) - pow(((1 - sqrt(5)) / 2), a));
-	printf("F(%d) = %lu\n", a, fibo);
+	long double fibo = (powl(((1. + i)/ 2.), a) - powl(((1. - i)/ 2.), a)) / i;
+	printf("F(%d) = %.0Lf\n", a, fibo);
 
 	return 0;
 }
